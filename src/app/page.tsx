@@ -1,5 +1,4 @@
 import SmoothScroll from "@/components/SmoothScroll";
-import Preloader from "@/components/Preloader";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import FeaturedWork from "@/components/FeaturedWork";
@@ -10,7 +9,6 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <SmoothScroll>
-      <Preloader />
       <Nav />
       <main>
         <Hero />

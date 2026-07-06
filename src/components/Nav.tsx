@@ -14,7 +14,7 @@ export default function Nav() {
     <motion.header
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, delay: 2.2, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-0 inset-x-0 z-[100] mix-blend-difference text-cream"
     >
       <nav className="flex items-center justify-between px-6 md:px-12 py-5">

@@ -16,14 +16,14 @@ export default function Hero() {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2.4, duration: 1 }}
+          transition={{ delay: 0.9, duration: 1 }}
         >
           Cairo, Egypt
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2.5, duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
         >
           Portfolio — 2026
         </motion.span>
@@ -34,7 +34,7 @@ export default function Hero() {
           <motion.h1
             initial={{ y: "110%" }}
             animate={{ y: 0 }}
-            transition={{ duration: 1.1, delay: 2.1, ease }}
+            transition={{ duration: 1.1, delay: 0.15, ease }}
             className="font-display text-[clamp(4rem,14.5vw,15rem)] leading-[0.9] tracking-[-0.03em]"
           >
             Ali Wael
@@ -44,7 +44,7 @@ export default function Hero() {
           <motion.p
             initial={{ y: "110%" }}
             animate={{ y: 0 }}
-            transition={{ duration: 1.1, delay: 2.25, ease }}
+            transition={{ duration: 1.1, delay: 0.3, ease }}
             className="font-display italic text-[clamp(1.8rem,5.5vw,5.5rem)] leading-[1.05] tracking-[-0.02em] text-clay"
           >
             full-stack developer
@@ -54,7 +54,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 2.6, ease }}
+          transition={{ duration: 1, delay: 0.65, ease }}
           className="mt-8 max-w-md text-ink-soft leading-relaxed"
         >
           I design and build web platforms, mobile apps and the backends behind
@@ -66,7 +66,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 2.9, duration: 1 }}
+        transition={{ delay: 1.1, duration: 1 }}
         className="border-y border-ink/10 py-4 overflow-hidden"
         aria-hidden
       >

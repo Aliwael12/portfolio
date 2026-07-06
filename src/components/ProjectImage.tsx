@@ -56,15 +56,17 @@ export default function ProjectImage({
   const [side, setSide] = useState<"web" | "app">("web");
 
   useEffect(() => {
-    if (!parallax || hasBoth || !frame.current || !inner.current) return;
+    if (!parallax || hasBoth || !frame.current) return;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) return;
     const ctx = gsap.context(() => {
+      // drift the whole frame instead of an oversized inner image,
+      // so the screenshot is never cropped
       gsap.fromTo(
-        inner.current,
-        { yPercent: -8 },
+        frame.current,
+        { yPercent: 5 },
         {
-          yPercent: 8,
+          yPercent: -5,
           ease: "none",
           scrollTrigger: {
             trigger: frame.current,
@@ -118,7 +120,7 @@ export default function ProjectImage({
       ref={frame}
       className="relative overflow-hidden rounded-sm bg-sand aspect-[16/10]"
     >
-      <div ref={inner} className="absolute inset-[-10%_0]">
+      <div ref={inner} className="absolute inset-0">
         {project.phones ? (
           <PhoneRow project={project} />
         ) : project.image ? (
