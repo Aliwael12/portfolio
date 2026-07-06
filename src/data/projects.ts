@@ -92,6 +92,33 @@ export const featured: Project[] = [
     links: [{ label: "GitHub", href: "https://github.com/Aliwael12/tv-show-tracker" }],
     phones: ["/shots/tv-up-next.png", "/shots/tv-library.png", "/shots/tv-detail.png"],
   },
+  {
+    slug: "compound",
+    title: "Compound",
+    category: "Multi-Tenant SaaS",
+    year: "2026",
+    blurb:
+      "A white-label resident & community platform for real-estate compounds. One Expo resident app and a super-admin console serve any number of compounds — per-tenant branding, feature toggles and EN/AR with RTL, all driven by config with no rebuilds. Announcements, QR visitor passes, service requests and amenity booking.",
+    stack: ["Expo", "React Native", "React", "Vite", "TypeScript", "Firebase"],
+    links: [],
+    image: "/shots/compound-dash.jpg",
+    phones: [
+      "/shots/compound-home.png",
+      "/shots/compound-visitor.png",
+      "/shots/compound-services.png",
+    ],
+  },
+  {
+    slug: "cove",
+    title: "Cove — El Gouna Marketplace",
+    category: "Marketplace App",
+    year: "2026",
+    blurb:
+      "The whole town of El Gouna in one app — browse and order from every vendor, from restaurants to pharmacies to boat trips, with one shared points wallet earned and redeemed anywhere. One-vendor-per-order cart with live points preview, wrapped in a sunlit editorial design with sleek Reanimated motion.",
+    stack: ["Expo", "React Native", "TypeScript", "Expo Router", "Reanimated"],
+    links: [],
+    phones: ["/shots/cove-home.png", "/shots/cove-vendor.png", "/shots/cove-wallet.png"],
+  },
 ];
 
 export const archive: Project[] = [
